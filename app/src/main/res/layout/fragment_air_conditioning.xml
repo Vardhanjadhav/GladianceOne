@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Navigation.RoomControl.AirConditioningFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Air Conditioning"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/like" />
+
+    <Switch
+        android:id="@+id/switchButtonLight"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:textSize="25dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:showText="true"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+
+
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="Temperature"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <hiennguyen.me.circleseekbar.CircleSeekBar
+        android:id="@+id/circular"
+        android:theme="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="64dp"
+        app:csb_arcColor="#33FFFFFF"
+        app:csb_arcWidth="6dp"
+        app:csb_thumbDrawable="@drawable/fan_circle"
+        app:csb_max="5"
+        app:csb_min="-1"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        app:csb_progress="2"
+        app:csb_progressColor="#FFA500"
+        app:csb_progressWidth="12dp"
+        app:csb_step="1"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:csb_textColor="@color/color_text"
+        app:csb_textSize="36sp"
+        app:csb_thumbSize="36dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFanSpeed"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewFanSpeed"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="Fan Speed"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:max="3"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:splitTrack="false"
+        android:thumb="@drawable/fan_circle3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Auto"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/white"
+       app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Low"
+        android:textColor="@color/white"
+     app:layout_constraintLeft_toRightOf="@+id/textView6"
+        android:layout_marginLeft="@dimen/_40sdp"
+       android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+     />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="High"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Medium"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/textView8"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

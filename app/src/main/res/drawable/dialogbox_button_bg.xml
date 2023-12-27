@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FE8E51" /> <!-- Background color when pressed -->
+            <corners android:radius="10dp" /> <!-- Corner radius, adjust as needed -->
+        </shape>
+    </item>
+
+    <!-- Button Default State -->
+    <item>
+        <shape>
+            <solid android:color="#FFF" /> <!-- Default background color -->
+            <corners android:radius="10dp" /> <!-- Corner radius, adjust as needed -->
+        </shape>
+    </item>
+
+</selector>
