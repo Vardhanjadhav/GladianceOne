@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     Animation topSlideAnimation;
     //View view;
 
+    TextView textViewForgotPass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -167,6 +168,22 @@ public class LoginActivity extends AppCompatActivity {
 
         // Make the links clickable
         textViewLogin.setMovementMethod(LinkMovementMethod.getInstance());
+
+        //Forgot password code
+        textViewForgotPass = findViewById(R.id.textViewForgotPass);
+
+        findViewById(R.id.textViewForgotPass).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start the SecondActivity
+                Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
 
         // Google Sing in Code
