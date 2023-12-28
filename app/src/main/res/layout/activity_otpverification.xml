@@ -144,11 +144,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
       />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_otp_send"
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_50sdp"
-        android:backgroundTint="#F75C01"
+        android:background="@drawable/new_button_bg"
         android:fontFamily="@font/roboto_bold"
         android:text="Verify"
         android:textAllCaps="false"

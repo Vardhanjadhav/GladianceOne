@@ -195,12 +195,12 @@
 
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_marginTop="@dimen/_15sdp"
-        android:backgroundTint="#F75C01"
+        android:background="@drawable/new_button_bg"
         android:fontFamily="@font/roboto_bold"
         android:text="Sign Up"
         android:textAllCaps="false"
