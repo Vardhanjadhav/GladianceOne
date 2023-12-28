@@ -29,6 +29,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Login.ForgotPasswordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Login.SignUpActivity"
             android:exported="false">
             <meta-data
@@ -41,8 +48,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <!-- <activity -->
+        </activity> <!-- <activity -->
         <!-- android:name=".MainActivity" -->
         <!-- android:exported="false" -->
         <!-- android:theme="@style/Theme.Design.Light.NoActionBar"> -->

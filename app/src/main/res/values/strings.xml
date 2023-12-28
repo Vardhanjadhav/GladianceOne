@@ -21,6 +21,7 @@
     <string name="SignUp">Don\'t have an account ? Sign Up</string>
     <string name="Login">Already Have an account ? Login</string>
     <string name="Resent">haven\'t received the code ? Resend here</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
 
 
 </resources>

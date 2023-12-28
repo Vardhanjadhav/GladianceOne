@@ -14,17 +14,14 @@
         <!-- Customize your theme here. -->
 
 
-
     </style>
 
 
-    <style name="AppBottomSheetDialogTheme"
-        parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
 
-    <style name="AppModalStyle"
-        parent="Widget.Design.BottomSheet.Modal">
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
 
@@ -45,5 +42,14 @@
         <item name="android:padding">4dp</item>
         <item name="android:textColor">#000000</item>
     </style>
+
+    <style name="Theme.Gladiance.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Gladiance.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Gladiance.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
