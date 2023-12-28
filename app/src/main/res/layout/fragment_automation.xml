@@ -89,12 +89,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center|left"
-                android:paddingStart="@dimen/_15sdp"
+                android:paddingStart="@dimen/_14sdp"
                 android:text="Project Type"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_13sdp" />
 
         <!-- EditText -->
             <EditText
@@ -103,7 +103,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/edittext_bg"
+                android:background="@drawable/custom_edittext_bg"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -115,12 +115,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Project Name"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
             <EditText
@@ -129,7 +129,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/edittext_bg"
+                android:background="@drawable/custom_edittext_bg"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -141,12 +141,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Room Type"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
             <EditText
@@ -155,7 +155,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/edittext_bg"
+                android:background="@drawable/custom_edittext_bg"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -167,12 +167,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Room No"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
             <EditText
@@ -181,7 +181,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/edittext_bg"
+                android:background="@drawable/custom_edittext_bg"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -193,12 +193,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_medium"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Area"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
             <EditText
@@ -207,7 +207,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/edittext_bg"
+                android:background="@drawable/custom_edittext_bg"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -255,7 +255,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
-                            android:fontFamily="@font/roboto_medium"
+                            android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Air Conditioner"
                             android:textColor="@color/white"
@@ -292,7 +292,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_weight="1"
-                            android:fontFamily="@font/roboto_medium"
+                            android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Celling Fan"
                             android:textColor="@color/white"
@@ -329,7 +329,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_weight="1"
-                            android:fontFamily="@font/roboto_medium"
+                            android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Curtains"
                             android:textColor="@color/white"
@@ -366,7 +366,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_weight="1"
-                            android:fontFamily="@font/roboto_medium"
+                            android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Light 1"
                             android:textColor="@color/white"

@@ -3,7 +3,7 @@
     android:layout_width="320dp"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="2dp"
+    app:cardCornerRadius="10dp"
     android:layout_marginHorizontal="20dp">
 
     <LinearLayout
@@ -41,31 +41,33 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_10sdp">
 
             <Button
                 android:id="@+id/btn_Yes"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_margin="5dp"
                 android:fontFamily="@font/roboto_medium"
                 android:text="Yes"
-                android:background="@drawable/dialogbox_button_bg"
+                android:background="@drawable/new_border_button_bg"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                />
 
             <Button
                 android:id="@+id/btn_No"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/_30sdp"
                 android:textSize="18dp"
                 android:textAllCaps="false"
-                android:background="@drawable/dialogbox_button_bg"
+                android:background="@drawable/new_border_button_bg"
                 android:text="No"
                 android:layout_margin="5dp"
                 android:fontFamily="@font/roboto_medium"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
 
 

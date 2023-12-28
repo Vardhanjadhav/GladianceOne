@@ -52,12 +52,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Project Type"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -87,12 +87,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Project Name"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -100,7 +100,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -122,12 +122,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Room Type"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -135,7 +135,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -157,12 +157,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Room No"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -170,7 +170,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -192,12 +192,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Area"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -205,7 +205,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -227,12 +227,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="User's Email Id"
             android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -240,7 +240,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/custom_edittext_bg"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>

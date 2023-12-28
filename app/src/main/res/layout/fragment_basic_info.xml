@@ -11,7 +11,6 @@
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
         android:background="@drawable/bg_main"
         android:orientation="horizontal"
@@ -22,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/roboto_medium"
@@ -33,6 +32,20 @@
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
             tools:layout_editor_absoluteX="0dp" />
+        <LinearLayout
+            android:id="@+id/editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgEditProfile"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:src="@drawable/editprofile"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
