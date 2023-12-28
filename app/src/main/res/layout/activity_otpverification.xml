@@ -149,7 +149,7 @@
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_40sdp"
         android:background="@drawable/new_button_bg"
-        android:fontFamily="@font/roboto_bold"
+        android:fontFamily="@font/roboto_medium"
         android:text="Verify"
         android:textAllCaps="false"
         android:textColor="@color/white"

@@ -68,12 +68,15 @@ public class LoginActivity extends AppCompatActivity {
 
             public void enableSubmitIfReady() {
 
-                boolean isReady = editTextUserId.getText().toString().length() > 1;
-                boolean isReady2 = editTextPassword.getText().toString().length() > 1;
-
-
+                boolean isReady = editTextUserId.getText().toString().length() > 2;
+                boolean isReady2 = editTextPassword.getText().toString().length() > 2;
 
                 btnLogin.setEnabled(isReady && isReady2);
+
+
+
+                btnLogin.setBackgroundResource(R.drawable.new_button_bg);
+
 
             }
 
