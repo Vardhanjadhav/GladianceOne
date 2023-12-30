@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black"
+    style="@style/SCREEN"
     android:orientation="vertical"
     tools:context=".Navigation.Home.HomeFragment">
 
@@ -46,9 +46,9 @@
             android:fontFamily="@font/roboto_bold"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_weight="4"
+            style="@style/TEXT"
             android:text="Taj Blue Diamond"
             android:textSize="@dimen/_15sdp"
-            android:textColor="@color/white"
             android:layout_marginRight="2dp"
             app:layout_constraintTop_toTopOf="parent"
             />
@@ -74,7 +74,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Hello Guest!"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/ll_1"
         app:layout_constraintTop_toBottomOf="@+id/ll_1"

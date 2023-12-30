@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.MyProfile.CreateProjectFragment"
-    android:background="@color/black">
+    style="@style/SCREEN">
     >
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/bg_main"
+        style="@style/MyButtonStyle"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -55,7 +55,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Project Type"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -64,7 +64,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -90,7 +90,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Project Name"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -99,7 +99,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -125,7 +125,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Room Type"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -134,7 +134,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -160,7 +160,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Room No"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -169,7 +169,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -196,7 +196,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Area"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -205,7 +205,7 @@
             android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>

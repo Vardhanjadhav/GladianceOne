@@ -15,10 +15,9 @@
         android:layout_width="200dp"
         android:layout_height="@dimen/_30sdp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_bg"
+        style="@style/TopButtonStyle"
         android:text="Control Bouquet"
         android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

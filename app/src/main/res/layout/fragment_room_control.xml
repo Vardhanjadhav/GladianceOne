@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black"
+    style="@style/SCREEN"
     android:orientation="vertical"
     tools:context=".Navigation.RoomControl.RoomControlFragment"
     android:id="@+id/roomControlFragment"
@@ -18,7 +18,7 @@
         android:layout_marginTop="@dimen/_26sdp"
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="horizontal"
-        android:background="@drawable/button_bg">
+        style="@style/TopButtonStyle">
 
         <TextView
             android:layout_width="wrap_content"

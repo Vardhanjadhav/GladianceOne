@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/bg_main"
+        android:background="@drawable/background_main_light"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
                 <ImageView
                     android:layout_weight="1"
@@ -101,7 +101,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
                 <ImageView
                     android:layout_weight="1"
@@ -141,7 +141,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
                 <ImageView
                     android:layout_weight="1"
@@ -180,7 +180,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
                 <ImageView
                     android:layout_weight="1"
@@ -219,7 +219,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
                 <ImageView
                     android:layout_weight="1"
@@ -258,7 +258,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/bg_main">
+                android:background="@drawable/background_main_light">
 
             <ImageView
                 android:layout_weight="1"

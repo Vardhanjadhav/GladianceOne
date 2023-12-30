@@ -63,7 +63,7 @@
                         android:id="@+id/GoodMornig"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bg_main"
+                        android:background="@drawable/background_main_light"
                         android:layout_marginLeft="@dimen/_2sdp"
                         android:orientation="vertical">
 
@@ -106,7 +106,7 @@
                         android:id="@+id/welcome"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bg_main"
+                        android:background="@drawable/background_main_light"
                         android:layout_marginRight="@dimen/_2sdp"
                         android:orientation="vertical">
 
@@ -149,7 +149,7 @@
                         android:id="@+id/Laundry"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bg_main"
+                        android:background="@drawable/background_main_light"
                         android:orientation="vertical">
 
                         <ImageView
@@ -191,7 +191,7 @@
                         android:id="@+id/Sunny"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bg_main"
+                        android:background="@drawable/background_main_light"
                         android:orientation="vertical">
 
                         <ImageView

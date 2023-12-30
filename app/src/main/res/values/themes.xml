@@ -52,4 +52,36 @@
 
     <style name="Theme.Gladiance.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <!-- LIGHT THEME CODE-->
+
+    <!--    Screen Background theme color-->
+    <style name="SCREEN">
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <!-- Text background if light mode on -->
+    <style name="TEXT">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <!-- Button and card view and all small small background Theme -->
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/background_main_dark</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- EditText Theme -->
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_edittext_bg_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Top Button Theme -->
+    <style name="TopButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/top_button_background_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
 </resources>

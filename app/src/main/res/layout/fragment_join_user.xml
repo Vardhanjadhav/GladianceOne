@@ -15,7 +15,7 @@
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="@dimen/_12sdp"
-        android:background="@drawable/bg_main"
+        android:background="@drawable/background_main_light"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

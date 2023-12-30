@@ -2,14 +2,12 @@ package com.example.gladiance.Navigation.Home;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -86,7 +84,7 @@ public class HomeFavoriteAdapter extends RecyclerView.Adapter<HomeFavoriteAdapte
                    //    holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.parseColor("#FFFFFF"));
                     }
                    else{
-                       bg1.setBackgroundResource(R.drawable.bg_main);
+                       bg1.setBackgroundResource(R.drawable.background_main_light);
                        mImageView.setImageResource(R.drawable.sun__white);
                        mTextView.setTextColor(Color.parseColor("#FFFFFF"));
                   //     mTextView.getResources().getColor(R.color.white);

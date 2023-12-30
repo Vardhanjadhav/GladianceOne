@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
-
     android:layout_marginVertical="20dp">
 
     <androidx.cardview.widget.CardView
@@ -14,8 +13,6 @@
         android:layout_height="140dp"
         android:layout_marginBottom="8dp"
         app:cardBackgroundColor="@android:color/transparent"
-
-        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -27,9 +24,7 @@
             android:id="@+id/bg1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_main"
-            android:elevation="40dp"
-            >
+            style="@style/MyButtonStyle">
 
             <ImageView
 
@@ -39,9 +34,7 @@
                 android:src="@drawable/sun__white"
                 android:id="@+id/iv_grid_view"
                 android:layout_gravity="center"
-                android:padding="10dp"
-                />
-
+                android:padding="10dp"/>
             <TextView
                 android:id="@+id/textview1"
                 android:layout_width="wrap_content"
@@ -50,10 +43,10 @@
                 android:layout_gravity="center"
                 android:layout_centerHorizontal="true"
                 android:padding="5dp"
+                style="@style/TEXT"
                 android:fontFamily="@font/roboto_light"
                 android:text="Good Morning"
                 android:textSize="15sp"
-                android:textColor="@color/white"
                 android:textStyle="bold" />
 
         </RelativeLayout>

@@ -11,4 +11,7 @@
     <color name="link_color">#F75C01</color>
     <color name="orange">#FFD700</color>
     <color name="transparentColor">#00FFFFFF</color>
+    <color name="cardButtonBackground">#232222</color>
+    <color name="cardButtonBackgroundLight">#E8E3E3</color>
+
 </resources>
