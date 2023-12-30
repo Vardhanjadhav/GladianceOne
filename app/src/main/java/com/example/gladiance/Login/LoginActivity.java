@@ -64,7 +64,12 @@ public class LoginActivity extends AppCompatActivity {
             public void afterTextChanged(Editable arg0) {
                // Toast.makeText(getApplicationContext(), "Please Enter Username and Password", Toast.LENGTH_SHORT).show();
 
-                enableSubmitIfReady();
+                boolean isReady = editTextUserId.getText().toString().length() > 2;
+                boolean isReady2 = editTextPassword.getText().toString().length() > 2;
+
+                if(isReady && isReady2 == true){
+                    enableSubmitIfReady();
+                }
             }
 
             public void enableSubmitIfReady() {
@@ -74,10 +79,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 btnLogin.setEnabled(isReady && isReady2);
 
-
-
                 btnLogin.setBackgroundResource(R.drawable.new_button_bg);
-
 
             }
 
@@ -91,8 +93,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //
-
-
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
