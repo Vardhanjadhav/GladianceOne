@@ -11,7 +11,7 @@
         android:layout_margin="8dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#80000000"
+        style="@style/MyButtonStyle"
         app:cardUseCompatPadding="true"
         tools:ignore="MissingConstraints">
 
@@ -48,7 +48,7 @@
                     android:paddingStart="5dp"
                     android:paddingTop="5dp"
                     android:text="Chicken Dum Biryani (Full)"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
                 <!-- Second Text View -->
@@ -62,7 +62,7 @@
                     android:paddingStart="5dp"
                     android:paddingTop="5dp"
                     android:text="Rs 200"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
             </LinearLayout>
@@ -89,7 +89,7 @@
                     android:layout_gravity="center"
                     android:background="@color/black"
                     android:text="Add"
-                    android:textColor="@color/white" />
+                    style="@style/MyButtonStyle" />
             </LinearLayout>
 
         </LinearLayout>

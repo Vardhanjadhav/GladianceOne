@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.ControlBouquet.HotelInfoFragment">
 
@@ -22,11 +23,11 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="2dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="10dp"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,7 +49,7 @@
             <LinearLayout
                 android:id="@+id/btn_amenities"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:orientation="horizontal">
@@ -60,7 +61,7 @@
                     android:paddingStart="1dp"
                     android:paddingTop="5dp"
                     android:text="Amenities"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="17dp" />
 
                 <ImageView
@@ -106,7 +107,7 @@
         android:layout_margin="2dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="10dp"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +140,7 @@
                     android:paddingTop="5dp"
                     android:paddingStart="1dp"
                     android:text="Telephone"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="17dp" />
 
                 <ImageView
@@ -181,7 +182,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="10dp"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -212,7 +213,7 @@
                     android:paddingStart="1dp"
                     android:paddingTop="5dp"
                     android:text="Key Contacts"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="17dp" />
 
                 <ImageView

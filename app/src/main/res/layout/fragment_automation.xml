@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.MyProfile.AutomationFragment">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -29,7 +29,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_20sdp"
             android:text="Automation"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
     </LinearLayout>
 
@@ -53,7 +53,7 @@
             android:layout_marginStart="@dimen/_30sdp"
             android:textAllCaps="false"
             android:fontFamily="@font/roboto_light"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_12sdp" />
 
         <Button
@@ -65,7 +65,7 @@
             android:layout_marginEnd="@dimen/_30sdp"
             android:textAllCaps="false"
             android:fontFamily="@font/roboto_light"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_12sdp"/>
 
 
@@ -93,7 +93,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_14sdp"
                 android:text="Project Type"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_13sdp" />
 
         <!-- EditText -->
@@ -103,7 +103,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/custom_edittext_bg_dark"
+                style="@style/MyEditTextStyle"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -119,7 +119,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Project Name"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
@@ -129,7 +129,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/custom_edittext_bg_dark"
+                style="@style/MyEditTextStyle"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -145,7 +145,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Room Type"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
@@ -155,7 +155,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/custom_edittext_bg_dark"
+                style="@style/MyEditTextStyle"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -171,7 +171,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Room No"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
@@ -181,7 +181,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/custom_edittext_bg_dark"
+                style="@style/MyEditTextStyle"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -197,7 +197,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_15sdp"
                 android:text="Area"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_13sdp" />
 
             <!-- EditText -->
@@ -207,7 +207,7 @@
                 android:textColor="@color/white"
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_12sdp"
-                android:background="@drawable/custom_edittext_bg_dark"
+                style="@style/MyEditTextStyle"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"/>
 
@@ -243,7 +243,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical">
 
                         <ImageView
@@ -258,7 +258,7 @@
                             android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Air Conditioner"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="@dimen/_14sdp" />
 
 
@@ -277,7 +277,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical"
                         android:weightSum="2">
 
@@ -295,7 +295,7 @@
                             android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Celling Fan"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="@dimen/_14sdp" />
 
 
@@ -314,7 +314,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical"
                         android:weightSum="2">
 
@@ -332,7 +332,7 @@
                             android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Curtains"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="@dimen/_14sdp" />
 
 
@@ -351,7 +351,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical"
                         android:weightSum="2">
 
@@ -369,7 +369,7 @@
                             android:fontFamily="@font/roboto_light"
                             android:gravity="center"
                             android:text="Light 1"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="@dimen/_14sdp" />
 
 

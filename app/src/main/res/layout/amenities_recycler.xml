@@ -8,12 +8,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
-     app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -38,7 +38,7 @@
                     android:gravity="start"
                     android:paddingStart="5dp"
                     android:text="Fitness Center"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
                 <TextView
@@ -50,7 +50,7 @@
                     android:gravity="start"
                     android:paddingStart="5dp"
                     android:text="Time : 05:00 am to 21:00 pm"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="14dp" />
 
                 <LinearLayout
@@ -74,7 +74,7 @@
                         android:gravity="start"
                         android:paddingStart="5dp"
                         android:text="0231-2522195"
-                        android:textColor="@color/white"
+                        style="@style/TEXT"
                         android:textSize="12sp" />
 
 
@@ -90,7 +90,7 @@
                     android:paddingStart="5dp"
                     android:paddingTop="5dp"
                     android:text="see more..."
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="12dp" />
 
 

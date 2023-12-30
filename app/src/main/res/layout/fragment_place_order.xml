@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.ControlBouquet.PlaceOrderFragment"
-    android:background="@drawable/bottom_sheet_bg">
+    style="@style/MyButtonStyle">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_place_order"
@@ -54,7 +54,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Grand Total"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUserId" />
@@ -67,7 +67,7 @@
         android:fontFamily="@font/roboto_medium"
         android:gravity="center|right"
         android:text="R 7000"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -81,7 +81,8 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Place Order"
         android:textSize="@dimen/_12sdp"
-        android:background="@drawable/common_btn_bg"
+        style="@style/TEXT"
+        android:background="@drawable/new_button_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

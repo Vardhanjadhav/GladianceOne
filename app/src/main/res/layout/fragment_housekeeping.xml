@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.ControlBouquet.HousekeepingFragment">
 
@@ -13,6 +14,7 @@
         android:text="HouseKeeping"
         android:gravity="center"
         android:textSize="25dp"
+        style="@style/TEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

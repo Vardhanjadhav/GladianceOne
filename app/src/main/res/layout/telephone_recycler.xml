@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
         android:foregroundGravity="center"
@@ -44,7 +44,7 @@
                     android:paddingStart="5dp"
                     android:paddingTop="15dp"
                     android:text="Reception Desk"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
                 <LinearLayout
@@ -73,7 +73,7 @@
                         android:paddingStart="5dp"
                         android:paddingTop="7dp"
                         android:text="1000"
-                        android:textColor="@color/white"
+                        style="@style/TEXT"
                         android:textSize="18dp" />
 
 

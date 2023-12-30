@@ -11,7 +11,7 @@
         android:layout_margin="8dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#232222"
+        style="@style/MyEditTextStyle"
         app:cardUseCompatPadding="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -42,7 +42,7 @@
                     android:gravity="start"
                     android:paddingStart="@dimen/_2sdp"
                     android:text="Police"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="@dimen/_15sdp" />
 
                 <LinearLayout
@@ -67,7 +67,7 @@
                         android:gravity="start"
                         android:text="101"
                         android:padding="@dimen/_2sdp"
-                        android:textColor="@color/white"
+                        style="@style/TEXT"
                         android:textSize="@dimen/_12ssp" />
 
 

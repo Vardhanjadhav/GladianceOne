@@ -112,7 +112,7 @@
             android:layout_weight="4"
             android:text="9120486356"
             android:textSize="16sp"
-            android:textColor="@color/white"
+                style="@style/TEXT"
             android:layout_marginRight="2dp"
             app:layout_constraintTop_toTopOf="parent"
             />
@@ -139,7 +139,7 @@
                     android:layout_weight="4"
                     android:fontFamily="@font/roboto_light"
                     android:text="View More..."
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="@dimen/_10ssp"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
@@ -156,7 +156,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="@dimen/_10sdp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:columnCount="3"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_10sdp"
@@ -187,7 +187,7 @@
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="Create Project"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
@@ -212,7 +212,7 @@
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="Automation"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
@@ -237,7 +237,7 @@
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="Add Device"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
@@ -252,7 +252,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="90dp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:columnCount="1"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_10sdp"
@@ -287,7 +287,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_20sdp"
                 android:text="Subscription"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
@@ -314,7 +314,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_20sdp"
                 android:text="Third Party Integration"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
@@ -341,7 +341,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_20sdp"
                 android:text="Help"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
@@ -368,7 +368,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_20sdp"
                 android:text="About Us - Privacy Police"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
 
@@ -395,7 +395,7 @@
                 android:gravity="center|left"
                 android:paddingStart="@dimen/_20sdp"
                 android:text="Setting"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:textSize="@dimen/_15sdp" />
         </LinearLayout>
     </GridLayout>

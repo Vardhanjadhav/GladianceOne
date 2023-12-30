@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.MyProfile.SettingFragment">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -29,7 +29,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_20sdp"
             android:text="Setting"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
     </LinearLayout>
 
@@ -62,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
                 <ImageView
                     android:layout_weight="1"
@@ -78,7 +78,7 @@
                     android:layout_height="match_parent"
                     android:textSize="@dimen/_20sdp"
                     android:fontFamily="@font/roboto_medium"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:text="Dark Theme"
                     android:paddingStart="@dimen/_5sdp"
                     android:gravity="center|left"/>
@@ -101,7 +101,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
                 <ImageView
                     android:layout_weight="1"
@@ -118,7 +118,7 @@
                     android:layout_height="match_parent"
                     android:textSize="@dimen/_20sdp"
                     android:fontFamily="@font/roboto_medium"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:text="Change wallpaper"
                     android:paddingStart="@dimen/_5sdp"
                     android:gravity="center|left"/>
@@ -141,7 +141,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
                 <ImageView
                     android:layout_weight="1"
@@ -157,7 +157,7 @@
                     android:layout_height="match_parent"
                     android:textSize="@dimen/_20sdp"
                     android:fontFamily="@font/roboto_medium"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:text="Icon Library"
                     android:paddingStart="@dimen/_5sdp"
                     android:gravity="center|left"/>
@@ -180,7 +180,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
                 <ImageView
                     android:layout_weight="1"
@@ -195,7 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="@dimen/_20sdp"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Push Notification"
                     android:paddingStart="@dimen/_5sdp"
@@ -219,7 +219,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
                 <ImageView
                     android:layout_weight="1"
@@ -234,7 +234,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="@dimen/_20sdp"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:text="GPS"
                     android:fontFamily="@font/roboto_medium"
                     android:paddingStart="@dimen/_5sdp"
@@ -258,7 +258,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:weightSum="2"
-                android:background="@drawable/background_main_light">
+                style="@style/MyButtonStyle">
 
             <ImageView
                 android:layout_weight="1"
@@ -273,7 +273,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="@dimen/_20sdp"
-                android:textColor="@color/white"
+                style="@style/TEXT"
                 android:text="Camera Access"
                 android:fontFamily="@font/roboto_medium"
                 android:paddingStart="@dimen/_5sdp"

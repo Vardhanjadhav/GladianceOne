@@ -14,8 +14,7 @@
         android:gravity="center|left"
         android:text="Select Room Type"
         android:textSize="17dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
+        style="@style/MyButtonStyle"
         android:alpha="0.8"/>
 
     <ImageView

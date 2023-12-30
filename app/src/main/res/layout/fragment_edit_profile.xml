@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black"
+
     tools:context=".Navigation.MyProfile.EditProfileFragment">
 
     <LinearLayout
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -29,7 +30,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_20sdp"
             android:text="Manage Profile"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
             tools:layout_editor_absoluteX="0dp" />
@@ -56,7 +57,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Name"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
@@ -64,9 +65,8 @@
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:background="@drawable/custom_edittext_bg_dark"
+            style="@style/MyEditTextStyle"
             android:paddingStart="@dimen/_5sdp"
-            android:textColor="@color/white"
             android:textSize="@dimen/_12sdp"
             android:text="Sushant Desai" />
     </LinearLayout>
@@ -92,16 +92,15 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Contact Number"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/_30sdp"
-            android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg_dark"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:text="9120486356" />
@@ -128,16 +127,15 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
             android:text="Email"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/_30sdp"
-            android:textColor="@color/white"
             android:paddingStart="@dimen/_5sdp"
             android:textSize="@dimen/_12sdp"
-            android:background="@drawable/custom_edittext_bg_dark"
+            style="@style/MyEditTextStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:text="Shushantpatil@gmail.com" />
@@ -153,7 +151,7 @@
         android:gravity="center|left"
         android:paddingStart="@dimen/_30sdp"
         android:text="Profile Photo"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="@dimen/_13sdp"
         app:layout_constraintTop_toBottomOf="@+id/linearlayoutEmail"
         tools:layout_editor_absoluteX="27dp" />
@@ -176,7 +174,7 @@
         android:fontFamily="@font/roboto_light"
         android:text="Change Profile Photo"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+       style="@style/TEXT"
         android:textSize="@dimen/_10sdp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -208,7 +206,7 @@
             android:fontFamily="@font/roboto_light"
             android:text="Cancel"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
 
         <Button
@@ -221,7 +219,7 @@
             android:fontFamily="@font/roboto_light"
             android:text="Update"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
 
     </LinearLayout>

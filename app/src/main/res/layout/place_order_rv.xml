@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#80000000"
+        style="@style/MyButtonStyle"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
         android:foregroundGravity="center"
@@ -48,7 +48,7 @@
                         android:gravity="start"
                         android:paddingStart="5dp"
                         android:text="Chicken Dum Biryani"
-                        android:textColor="@color/white"
+                        style="@style/TEXT"
                         android:textSize="18dp" />
 
 
@@ -63,7 +63,7 @@
                     android:gravity="start"
                     android:paddingStart="30dp"
                     android:text="R 200"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
                 <TextView
@@ -75,7 +75,7 @@
                     android:gravity="start"
                     android:paddingStart="30dp"
                     android:text="Dinner"
-                    android:textColor="@color/white"
+                    style="@style/TEXT"
                     android:textSize="18dp" />
 
 

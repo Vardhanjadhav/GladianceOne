@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.RoomControl.DoorLockFragment">
 
@@ -13,7 +14,7 @@
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text="Door Lock"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="@dimen/_15ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         android:text="Tab to unlock"
-        android:textColor="@color/white"
+        style="@style/TEXT"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintEnd_toEndOf="@+id/imglock"
         app:layout_constraintStart_toStartOf="@+id/imglock"

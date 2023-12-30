@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.MyProfile.AddDeviceFragment">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_marginTop="5dp"
-        android:background="@drawable/background_main_light"
+        style="@style/MyButtonStyle"
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp"
@@ -29,7 +29,7 @@
             android:gravity="center|left"
             android:paddingStart="@dimen/_20sdp"
             android:text="Add Device"
-            android:textColor="@color/white"
+            style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
     </LinearLayout>
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    style="@style/SCREEN"
     tools:context=".Navigation.RoomControl.MoodsFragment">
 
     <TextView
@@ -63,7 +63,7 @@
                         android:id="@+id/GoodMornig"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:layout_marginLeft="@dimen/_2sdp"
                         android:orientation="vertical">
 
@@ -85,7 +85,7 @@
                             android:layout_gravity="center"
                             android:padding="5dp"
                             android:text="Good Morning"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -106,7 +106,7 @@
                         android:id="@+id/welcome"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:layout_marginRight="@dimen/_2sdp"
                         android:orientation="vertical">
 
@@ -128,7 +128,7 @@
                             android:layout_gravity="center"
                             android:padding="5dp"
                             android:text="Welcome"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -149,7 +149,7 @@
                         android:id="@+id/Laundry"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical">
 
                         <ImageView
@@ -170,7 +170,7 @@
                             android:layout_gravity="center"
                             android:padding="5dp"
                             android:text="Vacation"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -191,7 +191,7 @@
                         android:id="@+id/Sunny"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/background_main_light"
+                        style="@style/MyButtonStyle"
                         android:orientation="vertical">
 
                         <ImageView
@@ -212,7 +212,7 @@
                             android:layout_gravity="center"
                             android:padding="5dp"
                             android:text="Sunny"
-                            android:textColor="@color/white"
+                            style="@style/TEXT"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/SCREEN"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.RoomControl.SmartTVFragment">
 
@@ -44,8 +45,8 @@
         android:textOn="ON"
         android:textOff="OFF"
         android:showText="true"
-        android:thumb="@drawable/switch_thumb"
-        android:track="@drawable/switch_background"
+        android:thumb="@drawable/switch_thumb_light"
+        android:track="@drawable/switch_background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

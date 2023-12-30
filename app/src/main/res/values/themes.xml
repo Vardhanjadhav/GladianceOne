@@ -32,10 +32,6 @@
 
     </style>
 
-    <style name="RatingBar" parent="Theme.AppCompat">
-        <item name="colorControlNormal">@color/white</item>
-        <item name="colorControlActivated">@color/orange</item>
-    </style>
 
     <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
         <item name="android:background">@drawable/otp_edittext_background</item>
@@ -83,5 +79,15 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <!-- Top Button Theme -->
+    <style name="CustomSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/switch_thumb_light</item>
+        <item name="android:track">@drawable/switch_background_light</item>
+    </style>
 
+    <!-- Top Feedback Ring Theme -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
 </resources>
