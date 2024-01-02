@@ -11,6 +11,8 @@
         android:layout_margin="@dimen/_1sdp"
         android:paddingHorizontal="10dp"
         android:text="Living Room"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/_5sdp"
         style="@style/MyButtonStyle"
         android:textSize="@dimen/_12sdp"
         android:fontFamily="@font/roboto_medium"
