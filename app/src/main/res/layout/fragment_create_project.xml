@@ -54,17 +54,16 @@
             android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
-            android:text="Project Type"
+            android:text="Select Project Type"
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
-        <EditText
+
+        <Spinner
+            android:id="@+id/customSpinner"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_30sdp"
-            android:textColor="@color/white"
-            android:paddingStart="@dimen/_5sdp"
-            android:textSize="@dimen/_12sdp"
-            style="@style/MyEditTextStyle"
+            android:layout_height="@dimen/_40sdp"
+            style="@style/MyButtonStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>
@@ -89,7 +88,7 @@
             android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
-            android:text="Project Name"
+            android:text="Name Of Project"
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
@@ -124,7 +123,7 @@
             android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
-            android:text="Room Type"
+            android:text="Name Of Space"
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
@@ -159,7 +158,7 @@
             android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
-            android:text="Room No"
+            android:text="Select Type Of Space"
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
@@ -195,7 +194,7 @@
             android:fontFamily="@font/roboto_light"
             android:gravity="center|left"
             android:paddingStart="@dimen/_15sdp"
-            android:text="Area"
+            android:text="Name Of Area"
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
@@ -211,19 +210,34 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/addArea"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_button_bg"
+        android:text="Add Area"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area" />
+
+    <Button
         android:layout_width="@dimen/_120sdp"
         android:layout_height="@dimen/_40sdp"
         android:background="@drawable/gradient_button_bg"
         android:text="Save"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_17sdp"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/area"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintTop_toBottomOf="@+id/addArea"
+        app:layout_constraintVertical_bias="0.421" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

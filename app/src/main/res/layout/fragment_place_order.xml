@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Navigation.ControlBouquet.PlaceOrderFragment"
-    style="@style/MyButtonStyle">
+    android:background="@drawable/dialog_bg"
+    tools:context=".Navigation.ControlBouquet.PlaceOrderFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_place_order"

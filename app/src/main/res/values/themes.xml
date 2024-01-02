@@ -17,14 +17,6 @@
     </style>
 
 
-    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
-        <item name="bottomSheetStyle">@style/AppModalStyle</item>
-    </style>
-
-    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
-        <item name="android:background">@android:color/transparent</item>
-    </style>
-
 
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
@@ -58,7 +50,7 @@
 
     <!-- Text background if light mode on -->
     <style name="TEXT">
-        <item name="android:textColor">#000</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <!-- Button and card view and all small small background Theme -->
@@ -67,10 +59,19 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <!-- Grid Backgraund Theme -->
+    <style name="MyGridStyle">
+        <item name="android:background">@drawable/background_main_dark</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
     <!-- EditText Theme -->
     <style name="MyEditTextStyle" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/custom_edittext_bg_light</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <!-- Top Button Theme -->
@@ -90,4 +91,19 @@
         <item name="colorControlNormal">@color/black</item>
         <item name="colorControlActivated">@color/orange</item>
     </style>
+
+    <!--  MeowBottomNavigation Theme -->
+    <style name="MeowBottomNavigation">
+        <item name="mbn_backgroundBottomColor">#ffffff</item>
+        <item name="mbn_circleColor">#000000</item>
+        <item name="mbn_countBackgroundColor">#ff6f00</item>
+        <item name="mbn_countTextColor">#ffffff</item>
+        <item name="mbn_defaultIconColor">#000000</item>
+        <item name="mbn_rippleColor">#000000</item>
+        <item name="mbn_selectedIconColor">#ffffff</item>
+        <item name="mbn_shadowColor">#000000</item>
+
+    </style>
+
+
 </resources>

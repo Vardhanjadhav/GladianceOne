@@ -32,7 +32,6 @@ public class NavBarActivity extends AppCompatActivity {
         replace(new HomeFragment());
 
 
-
         bottomNavigation.show(3, true);
 
 

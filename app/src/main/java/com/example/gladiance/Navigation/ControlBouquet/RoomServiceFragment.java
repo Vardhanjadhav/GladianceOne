@@ -1,17 +1,25 @@
 package com.example.gladiance.Navigation.ControlBouquet;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.gladiance.Login.LoginActivity;
 import com.example.gladiance.R;
@@ -53,13 +61,12 @@ public class RoomServiceFragment extends Fragment{
         imageViewPlaceOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                PlaceOrderFragment placeOrderFragment = new PlaceOrderFragment();
-//                placeOrderFragment.show(getChildFragmentManager(), placeOrderFragment.getTag());
-
-                placeOrderFragment = new PlaceOrderFragment(RoomServiceFragment.this,R.style.AppBottomSheetDialogTheme);
+                placeOrderFragment = new PlaceOrderFragment(RoomServiceFragment.this,R.drawable.dialog_bg);
                 placeOrderFragment.show(getChildFragmentManager(), placeOrderFragment.getTag());
             }
         });
+
+
 
         //Recycle view code
         RecycleViewFood = view.findViewById(R.id.rv_food_menu);
@@ -114,6 +121,7 @@ public class RoomServiceFragment extends Fragment{
         RecycleViewFood.setAdapter(new FoodMenuAdapter(requireContext(),imageVegNonveg,tvMemuName,tvMemuPrice,imageMenu,btnAdd));
 
         return view;
-
     }
+
+
 }

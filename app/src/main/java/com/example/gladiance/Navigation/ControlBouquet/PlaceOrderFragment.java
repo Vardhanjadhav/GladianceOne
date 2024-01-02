@@ -81,9 +81,6 @@ public class PlaceOrderFragment extends BottomSheetDialogFragment {
         RecycleViewPlaceOrder.setHasFixedSize(true);
         RecycleViewPlaceOrder.setAdapter(new PlaceOrderAdapter(requireContext(),imageVegNonveg,tvMemuName,tvMemuPrice,tvtype,imageMenu));
 
-
-
-
         return view;
     }
 

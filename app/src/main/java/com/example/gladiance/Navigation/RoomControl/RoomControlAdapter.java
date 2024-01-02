@@ -52,14 +52,7 @@ public class RoomControlAdapter extends RecyclerView.Adapter<RoomControlAdapter.
         holder.textViewItem.setText(item);
 
         holder.itemView.setBackgroundResource(selectedPosition == position ? R.drawable.border_highlight : 0);
-        holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.parseColor("#FFFFFF"));
-//      holder.textViewItem.setTextColor(selectedPosition == position ? R.id.btnTitle);
-//      holder.textViewItem.setTextColor(selectedPosition == position ? R.id.btnTitle);
-   //   holder.textViewItem.setTextColor(selectedPosition == position ? R.color.black);
-
-     //   holder.textViewItem.setTextColor(ContextCompat.getColor(contextObject,(R.color.black)));
-
-   //     holder.textViewItem.setTextColor(Color.parseColor("#54D66A"));
+        holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.BLACK);
 
         holder.textViewItem.setOnClickListener(new View.OnClickListener() {
             @Override

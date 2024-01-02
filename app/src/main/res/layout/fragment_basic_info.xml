@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        style="@style/MyButtonStyle"
+        style="@style/MyGridStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_12sdp"
@@ -167,7 +167,7 @@
 
     <LinearLayout
         android:id="@+id/llChangePassword"
-        style="@style/MyButtonStyle"
+        style="@style/MyGridStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -193,7 +193,7 @@
 
     <LinearLayout
         android:id="@+id/llInviteUser"
-        style="@style/MyButtonStyle"
+        style="@style/MyGridStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -219,7 +219,7 @@
 
     <LinearLayout
         android:id="@+id/llJoinUser"
-        style="@style/MyButtonStyle"
+        style="@style/MyGridStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -245,7 +245,7 @@
 
     <LinearLayout
         android:id="@+id/llLogout"
-        style="@style/MyButtonStyle"
+        style="@style/MyGridStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"

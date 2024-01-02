@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -28,21 +29,22 @@ import java.util.Objects;
 
 
 public class MyProfileFragment extends Fragment implements AdapterView.OnItemSelectedListener
-        {
+{
 
     public MyProfileFragment() {
         // Required empty public constructor
     }
 
-            TextView tv_view_more;
-            LinearLayout CreateProject;
-            LinearLayout Automation;
-            LinearLayout AddDevice;
-            LinearLayout subscription;
-            LinearLayout Integration;
-            LinearLayout Help;
-            LinearLayout AboutUs;
-            LinearLayout Setting;
+    TextView tv_view_more;
+    LinearLayout Project;
+    LinearLayout Automation;
+    LinearLayout AddDevice;
+    LinearLayout subscription;
+    LinearLayout Integration;
+    LinearLayout Help;
+    LinearLayout AboutUs;
+    LinearLayout Setting;
+    GridLayout gridLayout3;
 
 //    private LinearLayout btn_hide_show,layout_hide_show,btn_setting,layout_hide_show1,btn_logout;
 //
@@ -64,25 +66,18 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         tv_view_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new BasicInfoFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-//
                 Fragment fragment = new BasicInfoFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment)
+                        .commit();
 
             }
         });
 
-        CreateProject = view.findViewById(R.id.CreateProject);
-        CreateProject.setOnClickListener(new View.OnClickListener() {
+        Project = view.findViewById(R.id.Project);
+        Project.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                Fragment fragment = new CreateProjectFragment();
@@ -92,7 +87,7 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
 //                transaction.replace(R.id.container, fragment)
 //                        .commit();
 
-                Fragment fragment = new CreateProjectFragment();
+                Fragment fragment = new ProjectFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.container, fragment);
@@ -344,18 +339,18 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
 //        }
 //
 //
-      return view;
+        return view;
     }
 
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-            }
+    }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
-            }
+    }
 //
 //
 //        @Override

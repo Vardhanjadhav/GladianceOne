@@ -8,34 +8,39 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.example.gladiance.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class CustomSpinnerAdapter extends ArrayAdapter<MyProfileSpinnerItem> {
-    public CustomSpinnerAdapter(@NonNull Context context, ArrayList<MyProfileSpinnerItem> customSpinnerItemArrayList) {
-        super(context, 0, customSpinnerItemArrayList);
+public class CustomSpinnerAdapter extends ArrayAdapter<String> {
+
+    public CustomSpinnerAdapter(@NonNull Context context, @NonNull List<String> items) {
+        super(context, R.layout.custom_spinner_item, items);
     }
 
-
-    public View getView(int position, @NonNull View convertView, @NonNull ViewGroup parent){
-        return customView(position,convertView,parent);
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        return getCustomView(position, convertView, parent);
     }
 
-    public View getDropDownView(int position, @NonNull View convertView, @NonNull ViewGroup parent){
-        return customView(position,convertView,parent);
+    @Override
+    public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        return getCustomView(position, convertView, parent);
     }
 
-    public View customView(int position, @NonNull View convertView, @NonNull ViewGroup parent){
-        if (convertView == null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_spinner_layout,parent,false);
+    private View getCustomView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            LayoutInflater inflater = LayoutInflater.from(getContext());
+            convertView = inflater.inflate(R.layout.custom_spinner_item, parent, false);
         }
-        MyProfileSpinnerItem item = getItem(position);
-        TextView spinnerName = convertView.findViewById(R.id.tvCustomSpinner);
-        if (item != null){
-            spinnerName.setText(item.getSpinnerText());
-        }
+
+        TextView textView = convertView.findViewById(android.R.id.text1);
+        textView.setText(getItem(position));
+
         return convertView;
     }
 }

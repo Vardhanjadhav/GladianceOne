@@ -55,10 +55,7 @@ public class ControlBouquetHorizontalAdapter extends RecyclerView.Adapter<Contro
 
         holder.itemView.setBackgroundResource(selectedPosition == position ? R.drawable.border_highlight : 0);
 
-    //    holder.textViewItem.setText(item);
-
-  //      holder.itemView.setBackgroundResource(selectedPosition == position ? R.drawable.border_highlight : 0);
-        holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.parseColor("#FFFFFF"));
+        holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.BLACK);
 
 
         holder.textViewItem.setOnClickListener(new View.OnClickListener() {

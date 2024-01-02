@@ -7,7 +7,6 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/MyButtonStyle"
         app:cardCornerRadius="12dp"
         app:cardElevation="0dp"
         android:foregroundGravity="center"
@@ -20,6 +19,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            style="@style/MyButtonStyle"
             android:orientation="horizontal">
 
             <LinearLayout
