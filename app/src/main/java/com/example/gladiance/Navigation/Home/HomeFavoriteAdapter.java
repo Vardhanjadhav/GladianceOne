@@ -1,7 +1,10 @@
 package com.example.gladiance.Navigation.Home;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,6 +68,9 @@ public class HomeFavoriteAdapter extends RecyclerView.Adapter<HomeFavoriteAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
+                    Log.d(TAG, "onClick:222 ");
 
                     //Intent intent = new Intent(context, Seekbar.class);
                     // context.startActivities(new Intent[]{intent});
