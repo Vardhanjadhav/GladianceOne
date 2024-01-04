@@ -1,14 +1,19 @@
 package com.example.gladiance.Navigation.MyProfile;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,7 +60,7 @@ public class BasicInfoFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.basic_info_frameLayout, fragment)
+                transaction.replace(R.id.basic_info_frameLayout, fragment).addToBackStack(null)
                         .commit();
             }
         });
@@ -68,7 +73,7 @@ public class BasicInfoFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.basic_info_frameLayout, fragment)
+                transaction.replace(R.id.basic_info_frameLayout, fragment).addToBackStack(null)
                         .commit();
             }
         });
@@ -81,7 +86,7 @@ public class BasicInfoFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.basic_info_frameLayout, fragment)
+                transaction.replace(R.id.basic_info_frameLayout, fragment).addToBackStack(null)
                         .commit();
             }
         });
@@ -97,10 +102,20 @@ public class BasicInfoFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.basic_info_frameLayout, fragment)
+                transaction.replace(R.id.basic_info_frameLayout, fragment).addToBackStack(null)
                         .commit();
             }
         });
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                fragmentManager.popBackStack();
+                Log.d(TAG, "handleOnBackPressed: ");
+            }
+        };
+        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
 
         llLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,6 +157,7 @@ public class BasicInfoFragment extends Fragment {
             }
 
         });
+
         return view;
     }
 

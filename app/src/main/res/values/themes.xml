@@ -82,7 +82,7 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <!-- Top Button Theme -->
+    <!-- Top Switch Theme -->
     <style name="CustomSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
         <item name="android:thumb">@drawable/switch_thumb_light</item>
         <item name="android:track">@drawable/switch_background_light</item>

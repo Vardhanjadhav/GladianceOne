@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Navigation.MyProfile.AddDeviceFragment">
 
+
     <LinearLayout
         android:id="@+id/linearLayoutDevice"
         android:layout_width="0dp"
@@ -58,7 +59,7 @@
             android:textSize="@dimen/_12sdp" />
 
         <Button
-            android:id="@+id/myButton2"
+            android:id="@+id/MyDevice"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_40sdp"
             android:background="@drawable/new_border_button_bg"
@@ -100,6 +101,7 @@
             android:id="@+id/dropdownSpinner1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             style="@style/MyDropdownStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
@@ -134,6 +136,7 @@
             android:id="@+id/dropdownSpinner2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             style="@style/MyDropdownStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
@@ -168,6 +171,7 @@
             android:id="@+id/dropdownSpinner3"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             style="@style/MyDropdownStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
@@ -191,8 +195,15 @@
     </LinearLayout>
 
 
+
     <FrameLayout
         android:id="@+id/fragment_container_QR"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_My_Device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

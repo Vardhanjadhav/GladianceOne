@@ -63,7 +63,8 @@
             android:id="@+id/customSpinner"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            style="@style/MyButtonStyle"
+            style="@style/MyDropdownStyle"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
     </LinearLayout>

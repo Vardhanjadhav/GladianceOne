@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Navigation.MyProfile.MyDeviceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/AddDevice"
+            style="@style/TEXT"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/new_border_button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:text="Add Device"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/myButton2"
+            style="@style/TEXT"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/new_border_button_bg"
+            android:fontFamily="@font/roboto_light"
+            android:text="My Device"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_130sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButton"
+        app:layout_constraintVertical_bias="0.045">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_130sdp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            style="@style/MyButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Label :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Dev2 AC"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/delete" />
+            </LinearLayout>
+
+            <!-- Second Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Project :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="ABC"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/reload" />
+                />
+            </LinearLayout>
+
+            <!-- Third Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Space :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Veloce"
+                    android:textSize="@dimen/_14ssp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Area :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    style="@style/TEXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center|left"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Developer Room"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/MyDeviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

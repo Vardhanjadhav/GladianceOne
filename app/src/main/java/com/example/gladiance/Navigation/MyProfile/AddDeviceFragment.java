@@ -32,7 +32,7 @@ public class AddDeviceFragment extends Fragment {
         // Required empty public constructor
     }
 
-    Button myButton1, myButton2, scanButton;
+    Button myButton1, myButton2, scanButton,MyDevice;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -45,9 +45,9 @@ public class AddDeviceFragment extends Fragment {
 
         // Create a list of items for the dropdown
         List<String> items = new ArrayList<>();
-        items.add("Item 1");
-        items.add("Item 2");
-        items.add("Item 3");
+        items.add("ABC");
+        items.add("XYZ");
+        items.add("ABC");
 
         // Create a custom adapter with your custom layout for dropdown items
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
@@ -65,9 +65,11 @@ public class AddDeviceFragment extends Fragment {
 
         // Create a list of items for the dropdown
         List<String> items2 = new ArrayList<>();
-        items2.add("Item 1");
-        items2.add("Item 2");
-        items2.add("Item 3");
+        items2.add("Home");
+        items2.add("Office");
+        items2.add("Hotel");
+        items2.add("Hospital");
+        items2.add("Other");
 
         // Create a custom adapter with your custom layout for dropdown items
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(
@@ -85,9 +87,9 @@ public class AddDeviceFragment extends Fragment {
 
         // Create a list of items for the dropdown
         List<String> items3 = new ArrayList<>();
-        items3.add("Item 1");
-        items3.add("Item 2");
-        items3.add("Item 3");
+        items3.add("Room 1");
+        items3.add("Room 2");
+        items3.add("Room 3");
 
         // Create a custom adapter with your custom layout for dropdown items
         ArrayAdapter<String> adapter3 = new ArrayAdapter<>(
@@ -102,11 +104,25 @@ public class AddDeviceFragment extends Fragment {
 
         scanButton = view.findViewById(R.id.scanButton);
 
-        view.findViewById(R.id.scanButton).setOnClickListener(new View.OnClickListener() {
+        scanButton.findViewById(R.id.scanButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Open the QR code scanner on button click
                 initiateQRCodeScan();
+            }
+        });
+
+        MyDevice = view.findViewById(R.id.MyDevice);
+        MyDevice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new MyDeviceFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.fragment_My_Device, fragment).addToBackStack(null)
+                        .commit();
+
             }
         });
 
