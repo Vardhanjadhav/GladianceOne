@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="true">
         <shape android:shape="rectangle">
-            <solid android:color="#FFF" /> <!-- White background when checked/on -->
+            <solid android:color="#000000" /> <!-- White background when checked/on -->
             <corners android:radius="10dp" /> <!-- Adjust the radius based on your preference -->
         </shape>
     </item>
