@@ -8,7 +8,7 @@
     tools:context=".Navigation.MyProfile.AddDeviceFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/linearLayoutDevice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -28,9 +28,171 @@
             android:fontFamily="@font/roboto_medium"
             android:gravity="center|left"
             android:paddingStart="@dimen/_20sdp"
-            android:text="Add Device"
+            android:text="Device"
             style="@style/TEXT"
             android:textSize="@dimen/_17sdp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDevice" >
+
+        <Button
+            android:id="@+id/myButton1"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/new_border_button_bg"
+            android:text="Add Device"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_light"
+            style="@style/TEXT"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/myButton2"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/new_border_button_bg"
+            android:text="My Device"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_light"
+            style="@style/TEXT"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ProjectType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="Project Type"
+            style="@style/TEXT"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <Spinner
+            android:id="@+id/dropdownSpinner1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            style="@style/MyDropdownStyle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spaceType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectType">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="Space Type"
+            style="@style/TEXT"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <Spinner
+            android:id="@+id/dropdownSpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            style="@style/MyDropdownStyle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/projectType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spaceType">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="Area"
+            style="@style/TEXT"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <Spinner
+            android:id="@+id/dropdownSpinner3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            style="@style/MyDropdownStyle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/gradient_button_bg"
+            android:gravity="center"
+            android:text="Save &amp; Scan QR "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projectType" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_QR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

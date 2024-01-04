@@ -56,4 +56,7 @@ dependencies {
 
     //circular seekbar
     implementation 'me.hiennguyen.circleseekbar:circleseekbar:1.0.1'
+
+    //OR Code
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
 }

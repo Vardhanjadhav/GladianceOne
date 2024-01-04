@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -35,27 +36,24 @@ public class CreateProjectFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_create_project, container, false);
 
-        Spinner customSpinner = view.findViewById(R.id.customSpinner);
+        Spinner dropdownSpinner = view.findViewById(R.id.customSpinner);
 
-        // Sample data for the spinner
-        List<String> spinnerItems = Arrays.asList("Project 1", "Project 2", "Project 3");
+        // Create a list of items for the dropdown
+        List<String> items = new ArrayList<>();
+        items.add("Item 1");
+        items.add("Item 2");
+        items.add("Item 3");
 
-        CustomSpinnerAdapter customSpinnerAdapter = new CustomSpinnerAdapter(requireContext(), spinnerItems);
-        customSpinner.setAdapter(customSpinnerAdapter);
+        // Create a custom adapter with your custom layout for dropdown items
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                requireContext(),
+                R.layout.dropdown_item1,
+                R.id.text1,
+                items
+        );
 
-        customSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                String selectedItem = (String) parentView.getItemAtPosition(position);
-                Toast.makeText(requireContext(), "Selected: " + selectedItem, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-                // Handle case when nothing is selected
-            }
-        });
-
+        // Set the adapter for the dropdown spinner
+        dropdownSpinner.setAdapter(adapter);
         return view;
     }
 
