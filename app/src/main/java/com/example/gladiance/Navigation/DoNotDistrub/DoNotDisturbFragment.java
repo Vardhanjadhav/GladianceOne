@@ -43,7 +43,7 @@ public class DoNotDisturbFragment extends Fragment {
 
         //sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE);
         SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("MODE", Context.MODE_PRIVATE);
-        nightMODE = sharedPreferences.getBoolean("night",false); //light mode is default mode
+        nightMODE = sharedPreferences.getBoolean("night",false); //night mode is default mode
 
         if(nightMODE){
             switcher.setChecked(true);

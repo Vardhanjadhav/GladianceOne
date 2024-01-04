@@ -71,7 +71,7 @@ public class NavBarActivity extends AppCompatActivity {
 
     private void replace(Fragment fragment){
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.framelayout,fragment);
+        transaction.replace(R.id.framelayout,fragment).addToBackStack(null);
         transaction.commit();
     }
 }

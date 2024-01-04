@@ -88,7 +88,7 @@ public class HomeFragment extends Fragment {
 
         homeFavoriteAdapter = new HomeFavoriteAdapter(requireContext(),titles,mImages);
 
-        mImages.add(R.drawable.sun__white);
+        mImages.add(R.drawable.fan_white);
         mImages.add(R.drawable.sun__white);
         mImages.add(R.drawable.sun__white);
         mImages.add(R.drawable.sun__white);

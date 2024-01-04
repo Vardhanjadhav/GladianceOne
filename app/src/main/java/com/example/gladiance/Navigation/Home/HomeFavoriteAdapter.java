@@ -69,9 +69,6 @@ public class HomeFavoriteAdapter extends RecyclerView.Adapter<HomeFavoriteAdapte
                 @Override
                 public void onClick(View v) {
 
-
-                    Log.d(TAG, "onClick:222 ");
-
                     //Intent intent = new Intent(context, Seekbar.class);
                     // context.startActivities(new Intent[]{intent});
                     // v.setBackgroundResource(R.drawable.card_border);
@@ -90,6 +87,7 @@ public class HomeFavoriteAdapter extends RecyclerView.Adapter<HomeFavoriteAdapte
                    //    holder.textViewItem.setTextColor(selectedPosition == position ? Color.parseColor("#FFA500") : Color.parseColor("#FFFFFF"));
                     }
                    else{
+
                        bg1.setBackgroundResource(R.drawable.background_main_light);
                        mImageView.setImageResource(R.drawable.sun__white);
                        mTextView.setTextColor(Color.parseColor("#FFFFFF"));
