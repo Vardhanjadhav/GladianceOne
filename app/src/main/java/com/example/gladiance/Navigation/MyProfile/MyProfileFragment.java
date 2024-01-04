@@ -66,12 +66,19 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         tv_view_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new BasicInfoFragment();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-                        .beginTransaction();
+//                Fragment fragment = new BasicInfoFragment();
+//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+//                        .beginTransaction();
+//
+//                transaction.replace(R.id.container, fragment)
+//                        .commit();
 
-                transaction.replace(R.id.container, fragment)
-                        .commit();
+
+                Fragment fragment1 = new BasicInfoFragment();
+                FragmentManager fragmentManager = getChildFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container, fragment1).addToBackStack(null).commit();
+            //    fragmentTransaction.replace(R.id.container, fragment).commit();
 
             }
         });

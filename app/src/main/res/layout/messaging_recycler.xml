@@ -9,10 +9,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         app:cardCornerRadius="15dp"
         app:cardElevation="0dp"
         style="@style/MyButtonStyle"
+        android:background="@color/transparentColor"
         app:cardUseCompatPadding="true"
         tools:ignore="MissingConstraints"
         app:layout_constraintTop_toTopOf="parent"
