@@ -239,7 +239,7 @@
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
-                android:text="Add Device"
+                android:text="Device"
                 style="@style/TEXT"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>

@@ -107,5 +107,10 @@
 
     </style>
 
+    <!--  Dropdown Theme -->
+    <style name="MyDropdownStyle">
+        <item name="android:background">@drawable/dropdown_backgraund</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
 </resources>
