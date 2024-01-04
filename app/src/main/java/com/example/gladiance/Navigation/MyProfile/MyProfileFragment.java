@@ -74,7 +74,7 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Project.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new CreateProjectFragment();
+                Fragment fragment = new ProjectFragment();
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
@@ -206,9 +206,6 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
 
                 transaction.replace(R.id.container, fragment).addToBackStack(null)
                         .commit();
-
-
-
             }
         });
 

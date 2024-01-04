@@ -69,15 +69,15 @@
             style="@style/TEXT"
             android:textSize="@dimen/_13sdp" />
 
-        <EditText
+        <Spinner
+            android:id="@+id/dropdownSpinner1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_30sdp"
-            android:textColor="@color/white"
-            android:paddingStart="@dimen/_5sdp"
-            android:textSize="@dimen/_12sdp"
-            style="@style/MyEditTextStyle"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/MyDropdownStyle"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"/>
+
     </LinearLayout>
 
     <LinearLayout

@@ -32,32 +32,32 @@ public class AddFoodItemFragment extends BottomSheetDialogFragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_food_item, container, false);
-        scoreText = view.findViewById(R.id.scoreText);
-        scoreText.setText(String.valueOf(score));
-        incrementButton = view.findViewById(R.id.incrementButton);
-        decrementButton = view.findViewById(R.id.decrementButton);
+//        scoreText = view.findViewById(R.id.scoreText);
+//        scoreText.setText(String.valueOf(score));
+//        incrementButton = view.findViewById(R.id.incrementButton);
+//        decrementButton = view.findViewById(R.id.decrementButton);
 //        addItem = view.findViewById(R.id.btn_add_item);
 
-        incrementButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                score ++;
-                scoreText.setText(String.valueOf(score));
-            }
-        });
-
-        decrementButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if(score > 0) {
-                    score --;
-                    scoreText.setText(String.valueOf(score));
-                }
-
-            }
-        });
+//        incrementButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                score ++;
+//                scoreText.setText(String.valueOf(score));
+//            }
+//        });
+//
+//        decrementButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                if(score > 0) {
+//                    score --;
+//                    scoreText.setText(String.valueOf(score));
+//                }
+//
+//            }
+//        });
 
 //        addItem.setOnClickListener(new View.OnClickListener() {
 //            @Override

@@ -47,7 +47,7 @@ public class ProjectFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.Project_frameLayout, fragment)
+                transaction.replace(R.id.Project_frameLayout, fragment).addToBackStack(null)
                         .commit();
 
             }
@@ -62,7 +62,7 @@ public class ProjectFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.Project_frameLayout, fragment)
+                transaction.replace(R.id.Project_frameLayout, fragment).addToBackStack(null)
                         .commit();
 
             }
