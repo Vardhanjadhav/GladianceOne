@@ -37,7 +37,7 @@ public class WifiIntegrationFragment extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.WifiConnection_fragment, fragment)
+                transaction.replace(R.id.WifiConnection_fragment, fragment).addToBackStack(null)
                         .commit();
             }
         });

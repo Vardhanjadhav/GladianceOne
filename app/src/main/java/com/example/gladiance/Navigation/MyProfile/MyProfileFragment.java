@@ -46,13 +46,7 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
     LinearLayout Setting;
     GridLayout gridLayout3;
 
-//    private LinearLayout btn_hide_show,layout_hide_show,btn_setting,layout_hide_show1,btn_logout;
-//
-//    TextView tvMessage;
-//
-//    Button btnYes,btnNo;
-//
-//    private Spinner customSpinner;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -70,7 +64,7 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.container, fragment)
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
                         .commit();
 
             }
@@ -80,19 +74,19 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Project.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new CreateProjectFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
+                Fragment fragment = new CreateProjectFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
 
-                Fragment fragment = new ProjectFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+//                Fragment fragment = new ProjectFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 
@@ -100,20 +94,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Automation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new AutomationFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new AutomationFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new AutomationFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
 
             }
         });
@@ -122,20 +116,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         AddDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new AddDeviceFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new AddDeviceFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new AddDeviceFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 
@@ -143,20 +137,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         subscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new SubscriptionFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new SubscriptionFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new SubscriptionFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 
@@ -164,20 +158,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Integration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new IntegrationFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new IntegrationFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new IntegrationFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 
@@ -185,20 +179,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new HelpFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new HelpFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new HelpFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 
@@ -206,20 +200,15 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         AboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new AboutUsFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new AboutUsFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+
             }
         });
 
@@ -227,20 +216,20 @@ public class MyProfileFragment extends Fragment implements AdapterView.OnItemSel
         Setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Fragment fragment = new SettingFragment();
-//                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-//                        .beginTransaction();
-//
-//                transaction.replace(R.id.container, fragment)
-//                        .commit();
-
-
                 Fragment fragment = new SettingFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
+
+                transaction.replace(R.id.container, fragment).addToBackStack(null)
+                        .commit();
+
+
+//                Fragment fragment = new SettingFragment();
+//                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.container, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
             }
         });
 

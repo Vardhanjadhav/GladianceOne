@@ -221,7 +221,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
 
         <Button
-            android:id="@+id/starButton"
+            android:id="@+id/doneButton"
             style="@style/TEXT"
             android:layout_width="@dimen/_140sdp"
             android:layout_height="@dimen/_35sdp"
@@ -258,4 +258,9 @@
             app:layout_constraintVertical_bias="0.064" />
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/CheckConnectionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

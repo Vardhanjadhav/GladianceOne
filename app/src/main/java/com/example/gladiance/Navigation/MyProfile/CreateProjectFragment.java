@@ -1,10 +1,15 @@
 package com.example.gladiance.Navigation.MyProfile;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,9 +45,11 @@ public class CreateProjectFragment extends Fragment {
 
         // Create a list of items for the dropdown
         List<String> items = new ArrayList<>();
-        items.add("Item 1");
-        items.add("Item 2");
-        items.add("Item 3");
+        items.add("Home");
+        items.add("Hotel");
+        items.add("Office");
+        items.add("Hospital");
+        items.add("Other");
 
         // Create a custom adapter with your custom layout for dropdown items
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
@@ -54,6 +61,18 @@ public class CreateProjectFragment extends Fragment {
 
         // Set the adapter for the dropdown spinner
         dropdownSpinner.setAdapter(adapter);
+
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                fragmentManager.popBackStack();
+                Log.d(TAG, "handleOnBackPressed: ");
+            }
+        };
+        requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
+
         return view;
     }
 

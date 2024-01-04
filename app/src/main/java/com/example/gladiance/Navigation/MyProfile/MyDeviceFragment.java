@@ -2,6 +2,7 @@ package com.example.gladiance.Navigation.MyProfile;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -13,62 +14,42 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
 
 import com.example.gladiance.R;
 
 
-public class ProjectFragment extends Fragment {
-
-    LinearLayout MyProject;
-    LinearLayout CreateProject;
+public class MyDeviceFragment extends Fragment {
 
 
-    public ProjectFragment() {
+
+    public MyDeviceFragment() {
         // Required empty public constructor
     }
+    Button AddDevice;
 
 
-
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_project, container, false);
+        View view = inflater.inflate(R.layout.fragment_my_device, container, false);
 
+        AddDevice = view.findViewById(R.id.AddDevice);
 
-
-        MyProject = view.findViewById(R.id.MyProject);
-
-        MyProject.setOnClickListener(new View.OnClickListener() {
+        AddDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new MyProjectFragment();
+                Fragment fragment = new AddDeviceFragment();
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager()
                         .beginTransaction();
 
-                transaction.replace(R.id.Project_frameLayout, fragment)
+                transaction.replace(R.id.MyDeviceFragment, fragment).addToBackStack(null)
                         .commit();
 
             }
         });
-
-        CreateProject = view.findViewById(R.id.CreateProject);
-
-        CreateProject.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fragment = new CreateProjectFragment();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager()
-                        .beginTransaction();
-
-                transaction.replace(R.id.Project_frameLayout, fragment)
-                        .commit();
-
-            }
-        });
-
-
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
             @Override
@@ -79,9 +60,6 @@ public class ProjectFragment extends Fragment {
             }
         };
         requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
-
-        // The callback can be enabled or disabled here or in handleOnBackPressed()
-
 
         return view;
     }
